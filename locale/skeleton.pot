@@ -1,0 +1,46 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Horde Project
+# This file is distributed under the same license as the Skeleton package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Skeleton H4 (0.1-git)\n"
+"Report-Msgid-Bugs-To: dev@lists.horde.org\n"
+"POT-Creation-Date: 2011-02-02 16:17+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: lib/Block/example.php:15 lib/Block/example.php:26
+msgid "Color"
+msgstr ""
+
+#: lib/Block/example.php:3
+msgid "Example Block"
+msgstr ""
+
+#: lib/Application.php:61 list.php:16
+msgid "List"
+msgstr ""
+
+#: config/prefs.php.dist:10
+msgid "Sample Pref"
+msgstr ""
+
+#: config/prefs.php.dist:9
+msgid "Sample Prefs"
+msgstr ""
+
+#: config/prefs.php.dist:11
+msgid "Set your sample preference."
+msgstr ""
+
+#: config/prefs.php.dist:19
+msgid "This is your sample preference."
+msgstr ""
