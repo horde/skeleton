@@ -16,7 +16,7 @@
   <email>jan@horde.org</email>
   <active>yes</active>
  </lead>
- <date>2017-10-16</date>
+ <date>2017-10-17</date>
  <version>
   <release>1.0.0alpha1</release>
   <api>1.0.0alpha1</api>
@@ -93,8 +93,8 @@
      <file name="screen.css" role="horde" />
     </dir> <!-- /themes/default -->
    </dir> <!-- /themes -->
-   <file name="COPYING" role="doc" />
    <file name="index.php" role="horde" />
+   <file name="LICENSE" role="doc" />
    <file name="LICENSE.ASL" role="horde" />
    <file name="LICENSE.BSDL" role="horde" />
    <file name="list.php" role="horde" />
@@ -113,12 +113,6 @@
  </dependencies>
  <phprelease>
   <filelist>
-   <install as="COPYING" name="COPYING" />
-   <install as="skeleton/index.php" name="index.php" />
-   <install as="skeleton/LICENSE.ASL" name="LICENSE.ASL" />
-   <install as="skeleton/LICENSE.BSDL" name="LICENSE.BSDL" />
-   <install as="skeleton/list.php" name="list.php" />
-   <install as="README.rst" name="README.rst" />
    <install as="skeleton/config/.htaccess" name="config/.htaccess" />
    <install as="skeleton/config/conf.xml" name="config/conf.xml" />
    <install as="skeleton/config/prefs.php" name="config/prefs.php" />
@@ -126,29 +120,35 @@
    <install as="CREDITS" name="doc/CREDITS" />
    <install as="INSTALL" name="doc/INSTALL" />
    <install as="RELEASE_NOTES" name="doc/RELEASE_NOTES" />
+   <install as="skeleton/index.php" name="index.php" />
    <install as="skeleton/lib/.htaccess" name="lib/.htaccess" />
+   <install as="skeleton/lib/Ajax/Application.php" name="lib/Ajax/Application.php" />
    <install as="skeleton/lib/Api.php" name="lib/Api.php" />
    <install as="skeleton/lib/Application.php" name="lib/Application.php" />
-   <install as="skeleton/lib/Driver.php" name="lib/Driver.php" />
-   <install as="skeleton/lib/Exception.php" name="lib/Exception.php" />
-   <install as="skeleton/lib/Test.php" name="lib/Test.php" />
-   <install as="skeleton/lib/Ajax/Application.php" name="lib/Ajax/Application.php" />
    <install as="skeleton/lib/Block/Example.php" name="lib/Block/Example.php" />
+   <install as="skeleton/lib/Driver.php" name="lib/Driver.php" />
    <install as="skeleton/lib/Driver/Sql.php" name="lib/Driver/Sql.php" />
+   <install as="skeleton/lib/Exception.php" name="lib/Exception.php" />
    <install as="skeleton/lib/Factory/Driver.php" name="lib/Factory/Driver.php" />
+   <install as="skeleton/lib/Test.php" name="lib/Test.php" />
+   <install as="LICENSE" name="LICENSE" />
+   <install as="skeleton/LICENSE.ASL" name="LICENSE.ASL" />
+   <install as="skeleton/LICENSE.BSDL" name="LICENSE.BSDL" />
+   <install as="skeleton/list.php" name="list.php" />
    <install as="skeleton/locale/.htaccess" name="locale/.htaccess" />
-   <install as="skeleton/locale/skeleton.pot" name="locale/skeleton.pot" />
    <install as="skeleton/locale/en/help.xml" name="locale/en/help.xml" />
+   <install as="skeleton/locale/skeleton.pot" name="locale/skeleton.pot" />
    <install as="skeleton/migration/1_skeleton_base_tables.php" name="migration/1_skeleton_base_tables.php" />
+   <install as="README.rst" name="README.rst" />
    <install as="skeleton/templates/.htaccess" name="templates/.htaccess" />
    <install as="skeleton/templates/list.html.php" name="templates/list.html.php" />
    <install as="Skeleton/AllTests.php" name="test/Skeleton/AllTests.php" />
    <install as="Skeleton/bootstrap.php" name="test/Skeleton/bootstrap.php" />
    <install as="Skeleton/ExampleTest.php" name="test/Skeleton/ExampleTest.php" />
    <install as="Skeleton/phpunit.xml" name="test/Skeleton/phpunit.xml" />
-   <install as="skeleton/themes/default/screen.css" name="themes/default/screen.css" />
    <install as="skeleton/themes/default/graphics/delete.png" name="themes/default/graphics/delete.png" />
    <install as="skeleton/themes/default/graphics/user.png" name="themes/default/graphics/user.png" />
+   <install as="skeleton/themes/default/screen.css" name="themes/default/screen.css" />
   </filelist>
  </phprelease>
  <changelog>
@@ -161,7 +161,7 @@
     <release>alpha</release>
     <api>alpha</api>
    </stability>
-   <date>2017-10-16</date>
+   <date>2017-10-17</date>
    <license uri="TODO">TODO</license>
    <notes>
 * Initial release.
