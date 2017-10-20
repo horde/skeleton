@@ -16,7 +16,7 @@
   <email>jan@horde.org</email>
   <active>yes</active>
  </lead>
- <date>2017-10-17</date>
+ <date>2017-10-20</date>
  <version>
   <release>1.0.0alpha1</release>
   <api>1.0.0alpha1</api>
@@ -81,7 +81,6 @@
      <file name="AllTests.php" role="test" />
      <file name="bootstrap.php" role="test" />
      <file name="ExampleTest.php" role="test" />
-     <file name="phpunit.xml" role="test" />
     </dir> <!-- /test/Skeleton -->
    </dir> <!-- /test -->
    <dir name="themes">
@@ -145,7 +144,6 @@
    <install as="Skeleton/AllTests.php" name="test/Skeleton/AllTests.php" />
    <install as="Skeleton/bootstrap.php" name="test/Skeleton/bootstrap.php" />
    <install as="Skeleton/ExampleTest.php" name="test/Skeleton/ExampleTest.php" />
-   <install as="Skeleton/phpunit.xml" name="test/Skeleton/phpunit.xml" />
    <install as="skeleton/themes/default/graphics/delete.png" name="themes/default/graphics/delete.png" />
    <install as="skeleton/themes/default/graphics/user.png" name="themes/default/graphics/user.png" />
    <install as="skeleton/themes/default/screen.css" name="themes/default/screen.css" />
@@ -161,7 +159,7 @@
     <release>alpha</release>
     <api>alpha</api>
    </stability>
-   <date>2017-10-17</date>
+   <date>2017-10-20</date>
    <license uri="TODO">TODO</license>
    <notes>
 * Initial release.
