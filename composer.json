@@ -1,35 +1,35 @@
 {
     "name": "horde/skeleton",
     "description": "Skeleton for new Horde applications",
-    "type": "project",
+    "type": "horde-application",
     "homepage": "https://www.horde.org",
     "license": "TODO",
     "authors": [
         {
-            "name": "Chuck Hagenbuch",
-            "email": "chuck@horde.org",
-            "role": "lead"
-        },
-        {
             "name": "Jan Schneider",
             "email": "jan@horde.org",
             "role": "lead"
+        },
+        {
+            "name": "Chuck Hagenbuch",
+            "email": "chuck@horde.org",
+            "role": "lead"
         }
     ],
-    "version": "1.0.0alpha1",
-    "time": "2017-11-11",
+    "time": "2021-07-04",
     "repositories": [
         {
-            "type": "pear",
-            "url": "https://pear.horde.org"
+            "type": "composer",
+            "url": "https://horde-satis.maintaina.com/"
         }
     ],
     "require": {
-        "php": "^5.3"
+        "horde/horde-installer-plugin": "*",
+        "php": "^7"
     },
-    "replace": {
-        "pear-pear.horde.org/skeleton": "1.*",
-        "pear-horde/skeleton": "1.*"
+    "require-dev": {},
+    "suggest": {
+        "horde/horde": "^6"
     },
     "autoload": {
         "psr-0": {

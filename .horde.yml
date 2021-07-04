@@ -3,7 +3,7 @@ id: skeleton
 name: Skeleton
 full: Skeleton for new Horde applications
 description: TODO
-list:
+list: ~
 type: application
 authors:
   -
@@ -29,4 +29,7 @@ license:
   uri: TODO
 dependencies:
   required:
-    php: ^5.3
+    php: ^7
+  optional:
+    composer:
+      horde/horde: ^6
