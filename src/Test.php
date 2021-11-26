@@ -10,6 +10,11 @@
  * @license  http://www.horde.org/licenses/gpl GPL
  * @package  Skeleton
  */
+declare(strict_types=1);
+
+namespace Horde\Skeleton;
+
+use Horde_Test;
 
 /**
  * This class provides the application configuration for the test script.
@@ -20,50 +25,50 @@
  * @license   http://www.horde.org/licenses/gpl GPL
  * @package   Skeleton
  */
-class Skeleton_Test extends Horde_Test
+class Test extends Horde_Test
 {
     /**
      * The module list
      *
      * @var array
      */
-    protected $_moduleList = array();
+    protected $_moduleList = [];
 
     /**
      * PHP settings list.
      *
      * @var array
      */
-    protected $_settingsList = array();
+    protected $_settingsList = [];
 
     /**
      * PEAR modules list.
      *
      * @var array
      */
-    protected $_pearList = array();
+    protected $_pearList = [];
 
     /**
      * Required configuration files.
      *
      * @var array
      */
-    protected $_fileList = array();
+    protected $_fileList = [];
 
     /**
      * Inter-Horde application dependencies.
      *
      * @var array
      */
-    protected $_appList = array();
+    protected $_appList = [];
 
     /**
      * Any application specific tests that need to be done.
      *
      * @return string  HTML output.
      */
-    public function appTests()
+    public function appTests(): string
     {
+        return '';
     }
-
 }

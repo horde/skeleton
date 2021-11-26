@@ -10,11 +10,17 @@
  * @license  http://www.horde.org/licenses/gpl GPL
  * @package  Skeleton
  */
+declare(strict_types=1);
 
-use Horde\Skeleton\SkeletonException;
+namespace Horde\Skeleton;
+
+use Horde_Registry_Api;
 
 /**
- * Base exception class for Skeleton.
+ * Skeleton external API.
+ *
+ * This file defines Skeleton's external API interface. Other applications can
+ * interact with Skeleton through this API.
  *
  * @author    Your Name <you@example.com>
  * @category  Horde
@@ -22,6 +28,6 @@ use Horde\Skeleton\SkeletonException;
  * @license   http://www.horde.org/licenses/gpl GPL
  * @package   Skeleton
  */
-class Skeleton_Exception extends SkeletonException
+class Api extends Horde_Registry_Api
 {
 }

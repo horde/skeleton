@@ -10,6 +10,14 @@
  * @license  http://www.horde.org/licenses/gpl GPL
  * @package  Skeleton
  */
+declare(strict_types=1);
+
+namespace Horde\Skeleton\Driver;
+
+use Horde_Db_Adapter;
+use InvalidArgumentException;
+use Horde_Db_Exception;
+use Horde\Skeleton\SkeletonException;
 
 /**
  * Skeleton storage implementation for the Horde_Db database abstraction layer.
@@ -20,7 +28,7 @@
  * @license   http://www.horde.org/licenses/gpl GPL
  * @package   Skeleton
  */
-class Skeleton_Driver_Sql extends Skeleton_Driver
+class SqlDriver extends AbstractDriver implements Driver
 {
     /**
      * Handle for the current database connection.
@@ -34,7 +42,7 @@ class Skeleton_Driver_Sql extends Skeleton_Driver
      *
      * @var array
      */
-    protected $_foo = array();
+    protected $_foo = [];
 
     /**
      * Constructs a new SQL storage object.
@@ -46,7 +54,7 @@ class Skeleton_Driver_Sql extends Skeleton_Driver
      *
      * @throws InvalidArgumentException
      */
-    public function __construct(array $params = array())
+    public function __construct(array $params = [])
     {
         if (!isset($params['db'])) {
             throw new InvalidArgumentException('Missing db parameter.');
@@ -60,10 +68,11 @@ class Skeleton_Driver_Sql extends Skeleton_Driver
     /**
      * Retrieves the foos from the database.
      *
-     * @throws Skeleton_Exception
+     * @throws SkeletonException
      */
     public function retrieve()
     {
+        $values = [];
         /* Build the SQL query. */
 
         // Unrestricted query
@@ -79,7 +88,7 @@ class Skeleton_Driver_Sql extends Skeleton_Driver
         try {
             $rows = $this->_db->selectAll($query, $values);
         } catch (Horde_Db_Exception $e) {
-            throw new Skeleton_Exception($e);
+            throw new SkeletonException($e);
         }
 
         /* Store the retrieved values in the foo variable. */
@@ -89,20 +98,20 @@ class Skeleton_Driver_Sql extends Skeleton_Driver
     /**
      * Stores a foo in the database.
      *
-     * @throws Sms_Exception
+     * @throws SkeletonException
      */
     public function store($data)
     {
         $query = 'INSERT INTO skeleton_items' .
                  ' (item_owner, item_data)' .
                      ' VALUES (?, ?)';
-        $values = array($GLOBALS['registry']->getAuth(),
-                        $data);
+        $values = [$GLOBALS['registry']->getAuth(),
+                        $data, ];
 
         try {
             $this->_db->insert($query, $values);
         } catch (Horde_Db_Exception $e) {
-            throw new Sms_Exception($e->getMessage());
+            throw new SkeletonException($e->getMessage());
         }
     }
 }

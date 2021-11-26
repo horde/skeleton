@@ -10,6 +10,12 @@
  * @license  http://www.horde.org/licenses/gpl GPL
  * @package  Skeleton
  */
+declare(strict_types=1);
+
+namespace Horde\Skeleton\Ajax;
+
+use Horde_Core_Ajax_Application;
+use Horde_Core_Ajax_Application_Handler_Noop  as NoopHandler;
 
 /**
  * Skeleton AJAX application API.
@@ -24,15 +30,14 @@
  * @license   http://www.horde.org/licenses/gpl GPL
  * @package   Skeleton
  */
-class Skeleton_Ajax_Application extends Horde_Core_Ajax_Application
+class Application extends Horde_Core_Ajax_Application
 {
     /**
      * Application specific initialization tasks should be done in here.
      */
-    protected function _init()
+    protected function _init(): void
     {
         // This adds the 'noop' action to the current application.
-        $this->addHandler('Horde_Core_Ajax_Application_Handler_Noop');
+        $this->addHandler(NoopHandler::class);
     }
-
 }

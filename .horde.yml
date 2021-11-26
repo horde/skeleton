@@ -29,7 +29,21 @@ license:
   uri: TODO
 dependencies:
   required:
-    php: ^7
-  optional:
+    php: ^7.4 || ^8
     composer:
       horde/horde: ^6
+      # Because of demo driver
+      horde/db: ^3
+      horde/exception: ^3
+      horde/core: ^3
+      horde/http_server: ^1
+  optional:
+    composer:
+      horde/test: ^3
+      # The demo factory wants it
+      horde/ldap: ^3
+  dev:
+    composer:
+      horde/test: ^3
+      # The demo factory wants it
+      horde/ldap: ^3

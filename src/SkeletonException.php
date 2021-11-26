@@ -11,7 +11,9 @@
  * @package  Skeleton
  */
 
-use Horde\Skeleton\SkeletonException;
+namespace Horde\Skeleton;
+
+use Horde\Exception\Wrapped;
 
 /**
  * Base exception class for Skeleton.
@@ -22,6 +24,6 @@ use Horde\Skeleton\SkeletonException;
  * @license   http://www.horde.org/licenses/gpl GPL
  * @package   Skeleton
  */
-class Skeleton_Exception extends SkeletonException
+class SkeletonException extends Wrapped
 {
 }

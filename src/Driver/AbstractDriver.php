@@ -10,9 +10,12 @@
  * @license  http://www.horde.org/licenses/gpl GPL
  * @package  Skeleton
  */
+declare(strict_types=1);
+
+namespace Horde\Skeleton\Driver;
 
 /**
- * Skeleton_Driver defines an API for implementing storage backends for
+ * AbstractDriver defines an API for implementing storage backends for
  * Skeleton.
  *
  * @author    Your Name <you@example.com>
@@ -21,14 +24,14 @@
  * @license   http://www.horde.org/licenses/gpl GPL
  * @package   Skeleton
  */
-class Skeleton_Driver
+class AbstractDriver implements Driver
 {
     /**
      * Hash containing connection parameters.
      *
      * @var array
      */
-    protected $_params = array();
+    protected $_params = [];
 
     /**
      * Array holding the current foo list. Each array entry is a hash
@@ -36,14 +39,14 @@ class Skeleton_Driver
      *
      * @var array
      */
-    protected $_foos = array();
+    protected $_foos = [];
 
     /**
      * Constructor.
      *
      * @param array $params  A hash containing connection parameters.
      */
-    public function __construct($params = array())
+    public function __construct($params = [])
     {
         $this->_params = $params;
     }
@@ -53,7 +56,7 @@ class Skeleton_Driver
      *
      * @return array  Returns a list of all foos.
      */
-    public function listFoos()
+    public function listFoos(): array
     {
         return $this->_foos;
     }

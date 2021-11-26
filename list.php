@@ -2,19 +2,19 @@
 /**
  * Example list script.
  *
- * Copyright 2007-2017 Horde LLC (http://www.horde.org/)
+ * Copyright 2007-2021 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (GPL). If you
  * did not receive this file, see http://www.horde.org/licenses/gpl.
  *
  * @author    Your Name <you@example.com>
  * @category  Horde
- * @copyright 2007-2017 Horde LLC
+ * @copyright 2007-2021 Horde LLC
  * @license   http://www.horde.org/licenses/gpl GPL
  * @package   Skeleton
  */
 
-require_once __DIR__ . '/lib/Application.php';
+require_once __DIR__ . '/src/Application.php';
 Horde_Registry::appInit('skeleton');
 
 /* Example of how to use Horde_View. If getting a Horde_View instance via

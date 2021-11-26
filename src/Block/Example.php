@@ -10,6 +10,11 @@
  * @license  http://www.horde.org/licenses/gpl GPL
  * @package  Skeleton
  */
+declare(strict_types=1);
+
+namespace Horde\Skeleton\Block;
+
+use Horde_Core_Block;
 
 /**
  * Skeleton Block example.
@@ -20,11 +25,11 @@
  * @license   http://www.horde.org/licenses/gpl GPL
  * @package   Skeleton
  */
-class Skeleton_Block_Example extends Horde_Core_Block
+class Example extends Horde_Core_Block
 {
     /**
      */
-    public function __construct($app, $params = array())
+    public function __construct($app, $params = [])
     {
         parent::__construct($app, $params);
 
@@ -35,13 +40,13 @@ class Skeleton_Block_Example extends Horde_Core_Block
      */
     protected function _params()
     {
-        return array(
-            'color' => array(
+        return [
+            'color' => [
                 'type' => 'text',
                 'name' => _("Color"),
-                'default' => '#ff0000'
-            )
-        );
+                'default' => '#ff0000',
+            ],
+        ];
     }
 
     /**
@@ -61,5 +66,4 @@ class Skeleton_Block_Example extends Horde_Core_Block
 
         return sprintf($html, $this->_params['color']);
     }
-
 }

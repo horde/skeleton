@@ -35,4 +35,8 @@ run-tests.log
 /config/menu.php
 /config/*.local.php
 /config/*-*.php
+/config/conf.php
 
+composer.lock
+vendor/
+.phpunit.cache
