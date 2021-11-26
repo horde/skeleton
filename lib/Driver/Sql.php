@@ -34,7 +34,7 @@ class Skeleton_Driver_Sql extends Skeleton_Driver
      *
      * @var array
      */
-    protected $_foo = array();
+    protected $_foo = [];
 
     /**
      * Constructs a new SQL storage object.
@@ -46,7 +46,7 @@ class Skeleton_Driver_Sql extends Skeleton_Driver
      *
      * @throws InvalidArgumentException
      */
-    public function __construct(array $params = array())
+    public function __construct(array $params = [])
     {
         if (!isset($params['db'])) {
             throw new InvalidArgumentException('Missing db parameter.');
@@ -96,8 +96,8 @@ class Skeleton_Driver_Sql extends Skeleton_Driver
         $query = 'INSERT INTO skeleton_items' .
                  ' (item_owner, item_data)' .
                      ' VALUES (?, ?)';
-        $values = array($GLOBALS['registry']->getAuth(),
-                        $data);
+        $values = [$GLOBALS['registry']->getAuth(),
+                        $data, ];
 
         try {
             $this->_db->insert($query, $values);

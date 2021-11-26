@@ -25,7 +25,7 @@ class Skeleton_Factory_Driver extends Horde_Core_Factory_Injector
     /**
      * @var array
      */
-    private $_instances = array();
+    private $_instances = [];
 
     /**
      * Return an Skeleton_Driver instance.
@@ -35,7 +35,7 @@ class Skeleton_Factory_Driver extends Horde_Core_Factory_Injector
     public function create(Horde_Injector $injector)
     {
         $driver = Horde_String::ucfirst($GLOBALS['conf']['storage']['driver']);
-        $signature = serialize(array($driver, $GLOBALS['conf']['storage']['params']['driverconfig']));
+        $signature = serialize([$driver, $GLOBALS['conf']['storage']['params']['driverconfig']]);
         if (empty($this->_instances[$signature])) {
             switch ($driver) {
             case 'Sql':
@@ -49,11 +49,11 @@ class Skeleton_Factory_Driver extends Horde_Core_Factory_Injector
                 } catch (Horde_Exception $e) {
                     throw new Skeleton_Exception($e);
                 }
-                $params = array('db' => $db);
+                $params = ['db' => $db];
                 break;
             case 'Ldap':
                 try {
-                    $params = array('ldap' => $injector->getIntance('Horde_Core_Factory_Ldap')->create('skeleton', 'storage'));
+                    $params = ['ldap' => $injector->getIntance('Horde_Core_Factory_Ldap')->create('skeleton', 'storage')];
                 } catch (Horde_Exception $e) {
                     throw new Skeleton_Exception($e);
                 }

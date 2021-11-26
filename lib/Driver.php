@@ -28,7 +28,7 @@ class Skeleton_Driver
      *
      * @var array
      */
-    protected $_params = array();
+    protected $_params = [];
 
     /**
      * Array holding the current foo list. Each array entry is a hash
@@ -36,14 +36,14 @@ class Skeleton_Driver
      *
      * @var array
      */
-    protected $_foos = array();
+    protected $_foos = [];
 
     /**
      * Constructor.
      *
      * @param array $params  A hash containing connection parameters.
      */
-    public function __construct($params = array())
+    public function __construct($params = [])
     {
         $this->_params = $params;
     }

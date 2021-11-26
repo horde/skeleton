@@ -27,35 +27,35 @@ class Skeleton_Test extends Horde_Test
      *
      * @var array
      */
-    protected $_moduleList = array();
+    protected $_moduleList = [];
 
     /**
      * PHP settings list.
      *
      * @var array
      */
-    protected $_settingsList = array();
+    protected $_settingsList = [];
 
     /**
      * PEAR modules list.
      *
      * @var array
      */
-    protected $_pearList = array();
+    protected $_pearList = [];
 
     /**
      * Required configuration files.
      *
      * @var array
      */
-    protected $_fileList = array();
+    protected $_fileList = [];
 
     /**
      * Inter-Horde application dependencies.
      *
      * @var array
      */
-    protected $_appList = array();
+    protected $_appList = [];
 
     /**
      * Any application specific tests that need to be done.
@@ -65,5 +65,4 @@ class Skeleton_Test extends Horde_Test
     public function appTests()
     {
     }
-
 }

@@ -40,3 +40,4 @@ run-tests.log
 composer.lock
 vendor/
 .phpunit.cache
+.php-cs-fixer.cache

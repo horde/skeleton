@@ -34,5 +34,4 @@ class Skeleton_Ajax_Application extends Horde_Core_Ajax_Application
         // This adds the 'noop' action to the current application.
         $this->addHandler('Horde_Core_Ajax_Application_Handler_Noop');
     }
-
 }

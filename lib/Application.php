@@ -33,9 +33,11 @@ if (!defined('HORDE_BASE')) {
 require_once HORDE_BASE . '/lib/core.php';
 /**
  * Skeleton Application Core under traditional location
- * 
+ *
  * This class and the preceding conditional constant definitions are just
  * wrappers to ensure interop with older framework versions or with code
  * which does not know to call into the namespaced version directly.
  */
-class Skeleton_Application extends Application {}
+class Skeleton_Application extends Application
+{
+}

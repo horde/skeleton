@@ -23,23 +23,23 @@ Horde_Registry::appInit('skeleton');
 $view = $injector->createInstance('Horde_View');
 $view->header = _("Header");
 $view->content = _("Some Content");
-$view->list = array(
-    array('One', 'Foo'),
-    array('Two', 'Bar'),
-);
+$view->list = [
+    ['One', 'Foo'],
+    ['Two', 'Bar'],
+];
 
 /* Load JavaScript for sortable table. */
 $page_output->addScriptFile('tables.js', 'horde');
 
 /* Here starts the actual page output. First we output the complete HTML
  * header, CSS files, the topbar menu, and the sidebar menu. */
-$page_output->header(array(
-    'title' => _("List")
-));
+$page_output->header([
+    'title' => _("List"),
+]);
 
 /* Next we output any notification messages. This is not done automatically
  * because on some pages you might not want to have notifications. */
-$notification->notify(array('listeners' => 'status'));
+$notification->notify(['listeners' => 'status']);
 
 /* Here goes the actual content of your application's page. This could be
  * Horde_View output, a rendered Horde_Form, or any other arbitrary HTML

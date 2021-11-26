@@ -12,12 +12,13 @@
  */
 declare(strict_types=1);
 use Horde\Skeleton\Api;
+
 /**
  * Skeleton external API.
  *
  * Skeleton Application API under traditional location
- * 
- * This class is only a wrapper to ensure interop with older framework versions 
+ *
+ * This class is only a wrapper to ensure interop with older framework versions
  * or with code which does not know to call into the namespaced version directly.
  *
  * This file defines Skeleton's external API interface. Other applications can
@@ -29,4 +30,6 @@ use Horde\Skeleton\Api;
  * @license   http://www.horde.org/licenses/gpl GPL
  * @package   Skeleton
  */
-class Skeleton_Api extends Api {}
+class Skeleton_Api extends Api
+{
+}
