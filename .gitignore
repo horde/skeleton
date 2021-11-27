@@ -41,3 +41,6 @@ composer.lock
 vendor/
 .phpunit.cache
 .php-cs-fixer.cache
+## Remnants of install with the package itself as root
+/var
+/web
