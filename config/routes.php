@@ -1,5 +1,5 @@
 <?php
-//namespace Horde\Skeleton;
+namespace Horde\Skeleton;
 use Psr\Http\Server\MiddlewareInterface;
 use Psr\Http\Server\RequestHandlerInterface;
 /**
@@ -47,7 +47,7 @@ $mapper->connect(
     'ListUi',
     '/list',
     [
-        'controller' => Horde\Skeleton\Ui\ListItems::class,
+        'controller' => Ui\ListItems::class,
     ]
 );
 
@@ -56,6 +56,6 @@ $mapper->connect(
     'Index',
     '/*path',
     [
-        'controller' => Horde\Skeleton\Ui\ListItems::class,
+        'controller' => Ui\ListItems::class,
     ]
 );
