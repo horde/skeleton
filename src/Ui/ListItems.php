@@ -131,7 +131,7 @@ class ListItems implements MiddlewareInterface
         Horde_Session $session,
         Horde_PageOutput $page_output,
         Horde_View_Base $view,
-//        Horde_Notification_Handler $notification,
+        Horde_Notification_Handler $notification,
         Horde_Log_Logger $logger
     ) {
         $this->responseFactory = $responseFactory;
@@ -142,7 +142,7 @@ class ListItems implements MiddlewareInterface
         $this->page_output = $page_output;
         $this->view = $view;
         $this->logger = $logger;
-  //      $this->notification = $notification;
+        $this->notification = $notification;
     }
 
     /**
@@ -219,7 +219,7 @@ class ListItems implements MiddlewareInterface
 
         /* Next we output any notification messages. This is not done automatically
             * because on some pages you might not want to have notifications. */
-//        $this->notification->notify(['listeners' => 'status']);
+        $this->notification->notify(['listeners' => 'status']);
 
         /* Here goes the actual content of your application's page. This could be
             * Horde_View output, a rendered Horde_Form, or any other arbitrary HTML
