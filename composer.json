@@ -52,5 +52,6 @@
         "psr-4": {
             "Horde\\Skeleton\\Test\\": "test/"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
