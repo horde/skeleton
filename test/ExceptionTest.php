@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace Horde\Coronado\Test;
+namespace Horde\Skeleton\Test;
 use Horde\Test\TestCase;
 use Horde\Skeleton\SkeletonException;
 use \Skeleton_Exception;
@@ -11,7 +11,7 @@ use \Skeleton_Exception;
  * @package    Skeleton
  * @subpackage UnitTests
  */
-class WrapperClassTest extends TestCase
+class ExceptionTest extends TestCase
 {
     public function setUp(): void
     {
@@ -21,11 +21,6 @@ class WrapperClassTest extends TestCase
     {
         $this->expectException(SkeletonException::class);
         throw new SkeletonException();
-    }
-    public function testWrappedException()
-    {
-        $this->expectException(SkeletonException::class);
-        throw new Skeleton_Exception();
     }
 
     public function tearDown(): void

@@ -30,4 +30,26 @@ use Horde_Registry_Api;
  */
 class Api extends Horde_Registry_Api
 {
+    /**
+     * Example API method.
+     * 
+     * The default configuration presented in doc/registry.d/app-skeleton.php
+     * exposes skeleton's API as the fooitemapi.
+     * 
+     * Consumers can call into this API via registry
+     * 
+     * $registry->call('fooitemapi/getFoo') would return an array.
+     * $registry->fooitemapi->getFoo() would do the same.
+     * 
+     * The registry is case sensitive.
+     * 
+     * Registry API methods are by default also available
+     * through the XMLRPC and json-rpc interfaces and also SOAP
+     *
+     * @return string[]
+     */
+    public function getFoo(): array
+    {
+        return ['foo', 'bar'];
+    }
 }

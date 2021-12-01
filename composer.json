@@ -16,7 +16,7 @@
             "role": "lead"
         }
     ],
-    "time": "2021-11-28",
+    "time": "2021-12-01",
     "repositories": [
         {
             "type": "composer",
@@ -52,6 +52,5 @@
         "psr-4": {
             "Horde\\Skeleton\\Test\\": "test/"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
