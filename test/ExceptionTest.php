@@ -5,7 +5,7 @@ use Horde\Test\TestCase;
 use Horde\Skeleton\SkeletonException;
 use \Skeleton_Exception;
 /**
- * @author     Ralf Lang <lang@b1-systems.de>
+ * @author     Ralf Lang <ralf.lang@ralf-lang.de>
  * @license    http://www.horde.org/licenses/gpl GPL
  * @category   Horde
  * @package    Skeleton
