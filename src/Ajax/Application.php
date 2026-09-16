@@ -1,6 +1,7 @@
 <?php
+
 /**
- * Copyright 2012-2021 Horde LLC (http://www.horde.org/)
+ * Copyright 2012-2026 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (GPL). If you
  * did not receive this file, see http://www.horde.org/licenses/gpl.
@@ -15,7 +16,7 @@ declare(strict_types=1);
 namespace Horde\Skeleton\Ajax;
 
 use Horde_Core_Ajax_Application;
-use Horde_Core_Ajax_Application_Handler_Noop  as NoopHandler;
+use Horde_Core_Ajax_Application_Handler_Noop as NoopHandler;
 
 /**
  * Skeleton AJAX application API.

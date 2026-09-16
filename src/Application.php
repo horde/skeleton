@@ -1,6 +1,7 @@
 <?php
+
 /**
- * Copyright 2010-2021 Horde LLC (http://www.horde.org/)
+ * Copyright 2010-2026 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (GPL). If you
  * did not receive this file, see http://www.horde.org/licenses/gpl.
@@ -184,21 +185,20 @@ class Application extends Horde_Registry_Application
         Horde_Tree_Renderer_Base $tree,
         $parent = null,
         array $params = []
-    )
-    {
+    ) {
         switch ($params['id']) {
-        case 'menu':
-            $tree->addNode([
-                'id' => $parent . '__sub',
-                'parent' => $parent,
-                'label' => _("Sub Item"),
-                'expanded' => false,
-                'params' => [
-                    'icon' => Horde_Themes::img('add.png'),
-                    'url' => Horde::url('item.php'),
-                ],
-            ]);
-            break;
+            case 'menu':
+                $tree->addNode([
+                    'id' => $parent . '__sub',
+                    'parent' => $parent,
+                    'label' => _("Sub Item"),
+                    'expanded' => false,
+                    'params' => [
+                        'icon' => Horde_Themes::img('add.png'),
+                        'url' => Horde::url('item.php'),
+                    ],
+                ]);
+                break;
         }
     }
 }

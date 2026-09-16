@@ -1,6 +1,7 @@
 <?php
+
 /**
- * Copyright 2007-2021 Horde LLC (http://www.horde.org/)
+ * Copyright 2007-2026 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (GPL). If you
  * did not receive this file, see http://www.horde.org/licenses/gpl.
@@ -102,11 +103,11 @@ class SqlDriver extends AbstractDriver implements Driver
      */
     public function store($data)
     {
-        $query = 'INSERT INTO skeleton_items' .
-                 ' (item_owner, item_data)' .
-                     ' VALUES (?, ?)';
+        $query = 'INSERT INTO skeleton_items'
+                 . ' (item_owner, item_data)'
+                     . ' VALUES (?, ?)';
         $values = [$GLOBALS['registry']->getAuth(),
-                        $data, ];
+            $data, ];
 
         try {
             $this->_db->insert($query, $values);

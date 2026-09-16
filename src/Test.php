@@ -1,6 +1,7 @@
 <?php
+
 /**
- * Copyright 2010-2021 Horde LLC (http://www.horde.org/)
+ * Copyright 2010-2026 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (GPL). If you
  * did not receive this file, see http://www.horde.org/licenses/gpl.
@@ -24,6 +25,7 @@ use Horde_Test;
  * @copyright 2010-2021 Horde LLC
  * @license   http://www.horde.org/licenses/gpl GPL
  * @package   Skeleton
+ * @coversNothing
  */
 class Test extends Horde_Test
 {

@@ -2,7 +2,7 @@
 
 <div class="horde-buttonbar">
   <ul>
-    <li class="horde-icon"><?php echo Horde::widget(array('url' => Horde::url('delete.php'), 'title' => _("_Delete"), 'class' => 'skeleton-delete')) ?></li>
+    <li class="horde-icon"><?php echo Horde::widget(['url' => Horde::url('delete.php'), 'title' => _("_Delete"), 'class' => 'skeleton-delete']) ?></li>
     <li><?php echo Horde::url('foo.php')->link() . _("Foo") . '</a>' ?></li>
   </ul>
 </div>

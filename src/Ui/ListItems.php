@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This is an illustrational example on how to convert
  * traditional page files outside the /lib or /src path to
@@ -37,7 +38,6 @@ namespace Horde\Skeleton\Ui;
  * of the framework.
  */
 use Horde\Injector\Injector;
-
 /**
  * The standard PSR-7/PSR-15/PSR-17 fare.
  */
@@ -47,13 +47,11 @@ use Psr\Http\Server\MiddlewareInterface;
 use Psr\Http\Server\RequestHandlerInterface;
 use Psr\Http\Message\ResponseFactoryInterface;
 use Psr\Http\Message\StreamFactoryInterface;
-
 /**
  * I doubt we should rely on the Horde:: shortcuts going forward
  */
 use Horde;
 use Horde\Skeleton\SkeletonException;
-
 /**
  * PageOutput should not echo by default but return strings or streams.
  * It should be up to the caller to decide where output goes.
@@ -70,7 +68,6 @@ use Horde_PageOutput;
  * the locale, bits of page access control... and with very liberal interfaces.
  */
 use Horde_Registry;
-
 /**
  *
  */
@@ -150,7 +147,7 @@ class ListItems implements MiddlewareInterface
      *
      *
      *
-     * @see \Psr\Http\Server\MiddlewareInterface for concept
+     * @see MiddlewareInterface for concept
      * @param ServerRequestInterface $request The request might be amended or modified
      *                                        by previous middlewares
      * @param RequestHandlerInterface $handler We might refuse to deliver and ask the handler
