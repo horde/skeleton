@@ -6,14 +6,12 @@ description: TODO
 list: ~
 type: application
 authors:
-  -
-    name: Jan Schneider
+  - name: Jan Schneider
     user: jan
     email: jan@horde.org
     active: true
     role: lead
-  -
-    name: Chuck Hagenbuch
+  - name: Chuck Hagenbuch
     user: chuck
     email: chuck@horde.org
     active: false
@@ -47,3 +45,5 @@ dependencies:
       horde/test: ^3
       # The demo factory wants it
       horde/ldap: ^3
+keywords:
+vendor: horde
